@@ -1,4 +1,4 @@
-# Image-Transformation
+Steppingage-Transformation
 ## Aim
 To perform image transformation such as Translation, Scaling, Shearing, Reflection, Rotation and Cropping using OpenCV and Python.
 
@@ -24,13 +24,13 @@ Shearing_matrix=np.float32([[1,0.2,0],[0.2,1,0],[0,0,1]]) Sheared_image=cv2.warp
 ### Step5:
 Reflection of image can be achieved through the code Reflection_matrix_row=np.float32([[1,0,0],[0,-1,row],[0,0,1]]) Reflected_image_row=cv2.warpPerspective(org_img,Reflection_matrix_row,(col,int(row)))
 
-Step6:
+### Step6:
 Rotate the image using Rotation_angle=np.radians(10) Rotation_matrix=np.float32([[np.cos(Rotation_angle),-np.sin(Rotation_angle),0], [np.sin(Rotation_angle),np.cos(Rotation_angle),0], [0,0,1]]) Rotated_image=cv2.warpPerspective(org_img,Rotation_matrix,(col,(row)))
 
-Step7:
+### Step7:
 Crop the image using cropped_image=org_img[10:350,320:560]
 
-Step8:
+### Step8:
 Display all the Transformed images.
 
 ## Program:
