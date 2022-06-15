@@ -48,7 +48,6 @@ cv2.imshow("title",translated_img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 
-
 ii) Image Scaling
 M=np.float32([[1.5,0,0],
           [0,1.8,0],
@@ -57,7 +56,6 @@ scaled_img=cv2.warpPerspective(img,M,(cols,rows))
 cv2.imshow("title",scaled_img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-
 
 iii)Image shearing
 Mx=np.float32([[1,0.5,0],
@@ -72,7 +70,6 @@ cv2.imshow("title1",shx_img)
 cv2.imshow("title2",shy_img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-
 
 iv)Image Reflection
 Mx=np.float32([[1,0,0],
@@ -98,9 +95,7 @@ cv2.imshow("title1",rotimg)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 
-
 vi)Image Cropping
-
 cropimg=img[50:400,50:400]
 cv2.imshow("title1",cropimg)
 cv2.waitKey(0)
@@ -110,25 +105,25 @@ cv2.destroyAllWindows()
 
 ## Output:
 ### Normal image
-![raw](https://user-images.githubusercontent.com/75243072/165880772-6ed7ab12-b9f2-4e5d-aa5e-d50b4ead6dd4.png)
+![raw](https://user-images.githubusercontent.com/75243072/173761208-3470805f-d2a6-451f-8632-cc0bb89128bf.png)
 
 ### i)Image Translation
-![it](https://user-images.githubusercontent.com/75243072/165880837-b6120835-d5b2-4dc8-b8a3-52d1ca004d85.png)
+![it](https://user-images.githubusercontent.com/75243072/173761492-f5c189da-c64f-4d34-8601-8856d32eb4cb.png)
 
 ### ii) Image Scaling
-![is](https://user-images.githubusercontent.com/75243072/165880859-ca927e6f-3af9-4985-a7e6-d874b1b656df.png)
+![is](https://user-images.githubusercontent.com/75243072/173761532-eb960219-7b2a-4279-8559-358f14bdfd7a.png)
 
 ### iii)Image shearing
-![ish](https://user-images.githubusercontent.com/75243072/165880871-63a3e350-add8-4536-89f4-ff92ec8c625d.png)
+![ish](https://user-images.githubusercontent.com/75243072/173761584-1e8e2164-52fb-47bb-bb88-f1e70d29b713.png)
 
 ### iv)Image Reflection
-![ir](https://user-images.githubusercontent.com/75243072/165880889-b31e342f-7221-4bd6-8da6-e4c04bd2975a.png)
+![ir](https://user-images.githubusercontent.com/75243072/173761641-adb6a7ef-be54-4dd7-8977-fc64f9beef76.png)
 
 ### v)Image Rotation
-![irot](https://user-images.githubusercontent.com/75243072/165880918-a19da6a3-857b-459a-8c07-21519ae51ce5.png)
+![irot](https://user-images.githubusercontent.com/75243072/173761686-388ce2d9-5dfa-4f7b-8b9a-bbdf28742451.png)
 
 ### vi)Image Cropping
-![ic](https://user-images.githubusercontent.com/75243072/165880942-471f4b62-ffcd-47a2-950e-ec9030d60c98.png)
+![ic](https://user-images.githubusercontent.com/75243072/173761747-b7d9d239-1bd5-4669-85cd-ad97955bb47e.png)
 
 
 ## Result: 
