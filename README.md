@@ -113,11 +113,11 @@ cv2.destroyAllWindows()
 ### ii) Image Scaling
 ![is](https://user-images.githubusercontent.com/75243072/173761532-eb960219-7b2a-4279-8559-358f14bdfd7a.png)
 
-### iii)Image shearing
-![ish](https://user-images.githubusercontent.com/75243072/173761584-1e8e2164-52fb-47bb-bb88-f1e70d29b713.png)
+### iii)Image shearing 
+![Screenshot (299)](https://user-images.githubusercontent.com/75243072/173769152-59f1acd3-44a7-4e48-8188-a8c9fcb73ddb.png)
 
 ### iv)Image Reflection
-![ir](https://user-images.githubusercontent.com/75243072/173761641-adb6a7ef-be54-4dd7-8977-fc64f9beef76.png)
+![Screenshot (300)](https://user-images.githubusercontent.com/75243072/173769302-6056934f-a6f0-47ba-94a6-0723fddce6a7.png)
 
 ### v)Image Rotation
 ![irot](https://user-images.githubusercontent.com/75243072/173761686-388ce2d9-5dfa-4f7b-8b9a-bbdf28742451.png)
