@@ -24,10 +24,10 @@ Crop the image using cropped_image.
 Display all the Transformed images.
 
 ## Program:
+
 ```python
 Developed By:Kumaran.B
 Register Number:212220230026
-
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
@@ -38,7 +38,6 @@ cv2.imshow("title",img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 rows,cols,dim=img.shape
-
 i)Image Translation
 M=np.float32([[1,0,50],
           [0,1,75],
@@ -47,7 +46,6 @@ translated_img=cv2.warpPerspective(img,M,(cols,rows))
 cv2.imshow("title",translated_img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-
 ii) Image Scaling
 M=np.float32([[1.5,0,0],
           [0,1.8,0],
@@ -56,7 +54,6 @@ scaled_img=cv2.warpPerspective(img,M,(cols,rows))
 cv2.imshow("title",scaled_img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-
 iii)Image shearing
 Mx=np.float32([[1,0.5,0],
           [0,1,75],
@@ -70,7 +67,6 @@ cv2.imshow("title1",shx_img)
 cv2.imshow("title2",shy_img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-
 iv)Image Reflection
 Mx=np.float32([[1,0,0],
           [0,-1,rows],
@@ -84,7 +80,6 @@ cv2.imshow("title1",refx_img)
 cv2.imshow("title2",refy_img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-
 v)Image Rotation
 angle=np.radians(27)
 Rotation_matrix=np.float32([[np.cos(angle),-np.sin(angle),0],
@@ -94,7 +89,6 @@ rotimg=cv2.warpPerspective(img,Rotation_matrix,(int(cols),int(rows)))
 cv2.imshow("title1",rotimg)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-
 vi)Image Cropping
 cropimg=img[50:400,50:400]
 cv2.imshow("title1",cropimg)
@@ -102,28 +96,33 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 
-
 ## Output:
 ### Normal image
-![raw](https://user-images.githubusercontent.com/75243072/173761208-3470805f-d2a6-451f-8632-cc0bb89128bf.png)
+![Screenshot (328)](https://user-images.githubusercontent.com/75243072/174750368-303a4238-d687-4370-a20d-3ab4d5efef3b.png)
+
 
 ### i)Image Translation
-![it](https://user-images.githubusercontent.com/75243072/173761492-f5c189da-c64f-4d34-8601-8856d32eb4cb.png)
+![Screenshot (331)](https://user-images.githubusercontent.com/75243072/174750567-95fd1dbf-ab8e-4827-b5b3-4eef43bb34b3.png)
 
-### ii) Image Scaling
-![is](https://user-images.githubusercontent.com/75243072/173761532-eb960219-7b2a-4279-8559-358f14bdfd7a.png)
+
+###  ii)Image Scaling
+![Screenshot (332)](https://user-images.githubusercontent.com/75243072/174751587-731217fb-4da4-42e8-bd02-3de65bc7637d.png)
+
 
 ### iii)Image shearing 
-![Screenshot (299)](https://user-images.githubusercontent.com/75243072/173769152-59f1acd3-44a7-4e48-8188-a8c9fcb73ddb.png)
+![Screenshot (333)](https://user-images.githubusercontent.com/75243072/174751704-4368cfdb-8058-4f96-993e-192880b645b3.png)
+
+
 
 ### iv)Image Reflection
 ![Screenshot (300)](https://user-images.githubusercontent.com/75243072/173769302-6056934f-a6f0-47ba-94a6-0723fddce6a7.png)
 
-### v)Image Rotation
-![irot](https://user-images.githubusercontent.com/75243072/173761686-388ce2d9-5dfa-4f7b-8b9a-bbdf28742451.png)
+### <br><br>v)Image Rotation
+![Screenshot (334)](https://user-images.githubusercontent.com/75243072/174752240-1f1e11e5-f7f3-432c-b644-036876b40cb8.png)
 
-### vi)Image Cropping
-![ic](https://user-images.githubusercontent.com/75243072/173761747-b7d9d239-1bd5-4669-85cd-ad97955bb47e.png)
+
+### <br><br><br><br><br><br><br><br>vi)Image Cropping
+![Screenshot (335)](https://user-images.githubusercontent.com/75243072/174752305-e0bcab74-ce31-4592-a5f3-3ba5ca368206.png)
 
 
 ## Result: 
